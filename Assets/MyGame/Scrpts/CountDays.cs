@@ -20,9 +20,14 @@ public class CountDays : MonoBehaviour
 
        currentDay = System.DateTime.Today;
 
-       //exclusive christmasday
-       while (currentDay.CompareTo(christmasDay) < 0)
-        {  
+        //exclusive christmasday
+        TotalDaysToChristmas();
+    }
+
+    private void TotalDaysToChristmas()
+    {
+        while (currentDay.CompareTo(christmasDay) < 0)
+        {
             currentDay = currentDay.AddDays(1);
             days++;
         }
