@@ -12,18 +12,18 @@ public class CountDays : MonoBehaviour
 
     void Start()
     {
-        christmasDay = new System.DateTime(2020, 12, 24);
-        firstAdvent = new System.DateTime(2020, 11, 30);
-        secondAdvent = new System.DateTime(2020, 12, 6);
-        thirdAdvent = new System.DateTime(2020, 12, 13);
-        fourthAdvent = new System.DateTime(2020, 12, 20);
+       christmasDay = new System.DateTime(2020, 12, 24);
+       firstAdvent = new System.DateTime(2020, 11, 30);
+       secondAdvent = new System.DateTime(2020, 12, 6);
+       thirdAdvent = new System.DateTime(2020, 12, 13);
+       fourthAdvent = new System.DateTime(2020, 12, 20);
 
-        currentDay = System.DateTime.Today;
+       currentDay = System.DateTime.Today;
 
-       while (currentDay.CompareTo(christmasDay) <= 0)
+       //exclusive christmasday
+       while (currentDay.CompareTo(christmasDay) < 0)
         {  
             currentDay = currentDay.AddDays(1);
-            Debug.Log("currentDay " + currentDay);
             days++;
         }
 
