@@ -23,10 +23,14 @@ public class CountDays : MonoBehaviour
         currentDay = firstAdvent;
 
         //exclusive christmasday
-        TotalDaysToChristmas();
+        //TotalDaysToChristmasV1();
+        //TotalDaysToChristmasV2();
+        //TotalDaysToChristmasV3();
+        //TotalDaysToChristmasV4();
+        daysGui.text = TotalDaysToChristmasV4().ToString();
     }
 
-    private void TotalDaysToChristmas()
+    private void TotalDaysToChristmasV1()
     {
         while (currentDay.CompareTo(christmasDay) < 0)
         {
@@ -35,5 +39,35 @@ public class CountDays : MonoBehaviour
         }
 
         daysGui.text = days.ToString();
+    }
+
+    private void TotalDaysToChristmasV2()
+    {
+        int myDays = 0;
+
+        while (currentDay.CompareTo(christmasDay) < 0)
+        {
+            currentDay = currentDay.AddDays(1);
+            myDays++;
+        }
+
+        daysGui.text = myDays.ToString();
+    }
+
+    private void TotalDaysToChristmasV3()
+    {
+        double myDays = christmasDay.Subtract(currentDay).TotalDays;
+        daysGui.text = myDays.ToString();
+    }
+
+    private double TotalDaysToChristmasV4()
+    {
+        return christmasDay.Subtract(currentDay).TotalDays;
+    }
+
+    void TestLocalVars()
+    {
+        Debug.Log("Test instanz; " + days);
+        //Debug.Log("Test local; " + myDays);
     }
 }
