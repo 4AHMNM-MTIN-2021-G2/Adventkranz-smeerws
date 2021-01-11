@@ -273,6 +273,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178904219}
   m_CullTransparentMesh: 0
+--- !u!1 &191161491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 191161493}
+  - component: {fileID: 191161492}
+  m_Layer: 0
+  m_Name: IlumminateAdventkranz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &191161492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191161491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842c099f8388fb4439ea3c9ead2dded8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flame1: {fileID: 54464148}
+  flame2: {fileID: 391736501}
+  flame3: {fileID: 321960796}
+  flame4: {fileID: 703432820}
+--- !u!4 &191161493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191161491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &273229001
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc803ec99ccc37443940198d62e450ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  daysGui: {fileID: 423118650}
 --- !u!4 &1180071753
 Transform:
   m_ObjectHideFlags: 0
