@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,21 +7,21 @@ public class IlluminateAdventkranz : MonoBehaviour
 {
     public GameObject flame1, flame2, flame3, flame4;
 
-    private System.DateTime currentDay, christmasDay;
-    private System.DateTime firstAdvent, secondAdvent, thirdAdvent, fourthAdvent;
+    private DateTime currentDay, christmasDay;
+    private DateTime firstAdvent, secondAdvent, thirdAdvent, fourthAdvent;
     
     
     
     // Start is called before the first frame update
     void Start()
     {
-        currentDay = System.DateTime.Today;
+        currentDay = DateTime.Today;
 
-        firstAdvent = new System.DateTime(2020, 11, 30);
-        secondAdvent = new System.DateTime(2020, 12, 6);
-        thirdAdvent = new System.DateTime(2020, 12, 13);
-        fourthAdvent = new System.DateTime(2020, 12, 20);
-        christmasDay = new System.DateTime(2020, 12, 24);
+        firstAdvent = new DateTime(2020, 11, 30);
+        secondAdvent = new DateTime(2020, 12, 6);
+        thirdAdvent = new DateTime(2020, 12, 13);
+        fourthAdvent = new DateTime(2020, 12, 20);
+        christmasDay = new DateTime(2020, 12, 24);
 
         currentDay = firstAdvent;
 
@@ -49,7 +50,6 @@ public class IlluminateAdventkranz : MonoBehaviour
             Debug.Log("K4 brennt");
             flame4.SetActive(true);
         }
-
     }
 
     // Update is called once per frame
